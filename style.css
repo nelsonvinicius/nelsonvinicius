@@ -1,0 +1,94 @@
+body{
+    font-size: 18px;
+    display: grid;
+    grid-template-areas:'header header header header'
+                        'nav nav nav nav'
+                        'section section section aside'
+                        'batata batata batata batata'
+                        'footer footer footer footer';
+    grid-template-rows: 10vh 15vh 60vh 60vh 30vh;
+    grid-template-columns: 24vw 24vw 24vw 24.5vw;
+}
+
+nav{
+    grid-area: nav;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+header img{
+    height: 100%;
+    border-radius: 60px;
+} 
+
+header{
+    grid-area: header;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+
+}
+.batata{
+    grid-area: batata;
+}
+section{
+    grid-area: section;
+    background-color: olivedrab;
+    
+    
+}
+section .teste2{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+
+}
+
+section div iframe{
+    width: 100%;
+}
+
+section div p{
+    text-align: center;
+    font-size: 18pt;
+}
+
+.teste{
+    color: white;
+}
+
+.fake p{
+    font-size: 3.2rem;
+
+}
+
+footer{
+    grid-area: footer;
+    background-color: yellow;
+}
+
+aside{
+    grid-area: aside;
+    background-color: brown;
+}
+
+main{
+    grid-area: batata;
+    background-color: black;
+    background-image: url(img/Neymar11.jpg);
+}
+.teste2{
+    font-size: 1.2rem;
+}
+
+.teste3{
+    font-size: 1.2rem;
+}
